@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-page background image */
+.bg {
+    background-image: url('https://wallpapers.com/images/hd/beautiful-sky-background-g3s17ha3ry0kjhzj.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;  /* Flexbox to center the content */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+}
+
+/* Navbar container with background opacity */
+.navbar {
+    display: flex;  /* Flexbox to align logo and list horizontally */
+    align-items: center;  /* Vertically align items in the center */
+    justify-content: space-between;  /* Push logo to the left and list items to the right */
+    position: absolute;
+    top: 0;  /* Position the navbar at the top with no gap */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);  /* 10% white background opacity */
+    padding: 10px 120px;  /* Padding inside the navbar */
+    z-index: 1;  /* Ensures navbar is on top of other elements */
+}
+
+/* Logo styling with padding */
+.navbar img {
+    width: 150px;  /* Medium size for the logo */
+    height: auto;  /* Maintain the aspect ratio */
+    padding-left: 20px;  /* Space between the logo and the left side */
+}
+
+/* Container for the white box */
+.container {
+    display: flex;  /* Flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    width: 100%;  /* Full width */
+}
+
+/* White box styling */
+.white-box {
+    background-color: white;  /* White background */
+    border-radius: 10px;  /* Rounded corners */
+    padding: 20px;  /* Padding inside the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+    width: 90%;  /* Width of the white box */
+    max-width: 1100px;  /* Maximum width for larger screens */
+}
+.white-box {
+    /* Other styles... */
+    margin-top: 50px;  /* Move it down */
+    /* or */
+    margin-bottom: 500px;  /* Move it up */
+}
+
+/* Icon list styling */
+.icon-list {
+    list-style: none;  /* Removes default bullet points */
+    display: flex;  /* Align items in a row */
+    justify-content: space-between;  /* Evenly distribute space between items */
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+}
+
+/* List item styling */
+.icon-list li {
+    display: flex;  /* Flexbox for icon and text */
+    flex-direction: column;  /* Arrange items vertically */
+    align-items: center;  /* Center items horizontally */
+    flex: 1;  /* Allow items to stretch equally */
+    text-align: center;  /* Center text below the icon */
+}
+
+.icon-list img {
+    width: 48px;  /* Icon size */
+    height: 48px;  /* Icon height */
+}
+
+.icon-list span {
+    font-size: 14px;  /* Font size for text */
+    font-weight: 500;  /* Medium font weight */
+    color: #333;  /* Dark text color */
+}
+
+/* List styling for navbar */
+.nav-list {
+    list-style: none;  /* Removes default bullet points from the list */
+    display: flex;  /* Align list items horizontally */
+    gap: 30px;  /* Space between each list item */
+    margin: 0;
+    padding-right: 20px;  /* Padding between the right side and the list items */
+}
+
+.nav-list li {
+    display: flex;  /* Align icon and text next to each other */
+    align-items: center;  /* Vertically center the icon and text */
+    gap: 10px;  /* Space between the icon and text */
+}
+
+.nav-list img {
+    width: 24px;  /* Icon size */
+    height: 24px;  /* Icon height */
+}
+
+.nav-list span {
+    font-size: 16px;  /* Medium font size */
+    font-weight: 700;  /* Medium font weight */
+    color: #fff;  /* White text color to contrast against navbar background */
+}
+
+/* Blue background behind "Login" list item */
+.login-item {
+    background-color: rgba(0, 145, 255, 0.537);  /* Blue background specifically for "Login" */
+    padding: 10px 20px;  /* Padding to give space around the "Login" item */
+    border-radius: 5px;  /* Rounded corners for the background */
+}
+
+/* Make text in the "Login" list item white for contrast */
+.login-item span {
+    color: white;  /* White text color to contrast against the blue background */
+}
