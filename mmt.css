@@ -39,29 +39,47 @@ body {
     padding-left: 20px;  /* Space between the logo and the left side */
 }
 
-/* Container for the white box */
+/* Container for the boxes */
 .container {
     display: flex;  /* Flexbox for centering */
     justify-content: center;  /* Center horizontally */
     align-items: center;  /* Center vertically */
+    position: relative;
     width: 100%;  /* Full width */
+}
+
+/* Black box styling */
+.black-box {
+    background-color: rgb(255, 255, 255);  /* Black with 70% opacity */
+    border-radius: 10px;  /* Rounded corners */
+    padding: 30px;  /* Padding inside the black box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow for depth */
+    width: 100%;  /* Width of the black box */
+    max-width: 1200px;  /* Maximum width for larger screens */
+    height: 350px;  /* Height of the black box */
+    position: absolute;  /* Position it relative to the container */
+    z-index: 0;  /* Ensure it's behind the white box */
+    top: 20px;  /* Adjust vertical positioning */
+    margin-top: 70px; /* Move down */
+    /* Or */
+    margin-bottom: 50px; /* Move up */
 }
 
 /* White box styling */
 .white-box {
     background-color: white;  /* White background */
     border-radius: 10px;  /* Rounded corners */
-    padding: 20px;  /* Padding inside the box */
+    padding: 10px;  /* Padding inside the box */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
-    width: 90%;  /* Width of the white box */
+    width: 100%;  /* Width of the white box */
     max-width: 1100px;  /* Maximum width for larger screens */
+    z-index: 1;  /* Ensures it's above the black box */
+    position: relative;
+    margin-top: 50px; /* Move down */
+    /* Or */
+    margin-bottom: 500px; /* Move up */
 }
-.white-box {
-    /* Other styles... */
-    margin-top: 50px;  /* Move it down */
-    /* or */
-    margin-bottom: 500px;  /* Move it up */
-}
+
 
 /* Icon list styling */
 .icon-list {
@@ -69,7 +87,7 @@ body {
     display: flex;  /* Align items in a row */
     justify-content: space-between;  /* Evenly distribute space between items */
     margin: 0;  /* Remove default margin */
-    padding: 0;  /* Remove default padding */
+    padding: 1;  /* Remove default padding */
 }
 
 /* List item styling */
@@ -82,8 +100,8 @@ body {
 }
 
 .icon-list img {
-    width: 48px;  /* Icon size */
-    height: 48px;  /* Icon height */
+    width: 45px;  /* Icon size */
+    height: 45px;  /* Icon height */
 }
 
 .icon-list span {
@@ -120,7 +138,7 @@ body {
 
 /* Blue background behind "Login" list item */
 .login-item {
-    background-color: rgba(0, 145, 255, 0.537);  /* Blue background specifically for "Login" */
+    background-color: rgba(0, 145, 255, 0.812);  /* Blue background specifically for "Login" */
     padding: 10px 20px;  /* Padding to give space around the "Login" item */
     border-radius: 5px;  /* Rounded corners for the background */
 }
@@ -129,3 +147,106 @@ body {
 .login-item span {
     color: white;  /* White text color to contrast against the blue background */
 }
+/* Blue box styling */
+.blue-box {
+    background-color: #007BFF;  /* Blue color */
+    width: 200px;  /* Width of the blue box */
+    height: 50px;  /* Height of the blue box */
+    border-radius: 40px;  /* Rounded corners */
+    position: absolute;  /* Position it on top of the black box */
+    top: -60px;  /* Move it up from the top of the black box */
+    left: 50%;  /* Center it horizontally */
+    transform: translateX(-50%);  /* Adjust horizontal centering */
+    z-index: 1;  /* Make sure it appears above the black box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    margin-top: 530px; /* Move down */
+    /* Or */
+    margin-bottom: 50px; /* Move up */
+}
+/* Text styling for the search box */
+.search-text {
+    color: white;  /* White text color */
+    font-size: 28px;  /* Font size */
+    font-weight: medium;  /* Bold text */
+    text-align: center;  /* Center text */
+    display: flex;  /* Flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100%;  /* Full height of the blue box */
+}
+/* Transparent box styling */
+/* Transparent box styling */
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5);  /* White background with transparency */
+    border: 2px solid rgba(128, 128, 128, 0.268);  /* Grey border */
+    border-radius: 10px;  /* Rounded corners */
+    display: flex;  /* Flexbox for layout */
+    padding: 10px;  /* Padding inside the box */
+    position: absolute;  /* Position it above the black box */
+    top: 20px;  /* Adjust vertical positioning */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Centering fix */
+    width: 80%;  /* Width of the transparent box */
+    margin-top: 170px; /* Move down */
+    /* Or */
+    margin-bottom: 50px; /* Move up */
+}
+
+/* Section styling */
+.section {
+    border: 1px solid rgba(128, 128, 128, 0.265);  /* Grey border for each section */
+    padding: 50px;  /* Padding inside each section */
+    flex: 1;  /* Allow sections to stretch equally */
+    margin: 4px;  /* Space between sections */
+}
+
+/* Bigger sections */
+.big-section {
+    flex: 2;  /* Make the first two sections larger */
+}
+/* Small text styling */
+.small-text {
+    font-size: 12px;  /* Smaller font size */
+    margin-top: 4px;  /* Space above the small text */
+    margin-bottom: 4px;  /* Space below the small text */
+}
+
+/* Bold text styling */
+.bold-text {
+    font-weight: bold;  /* Bold font */
+    font-size: 30px;  /* Slightly larger font size */
+    margin-top: 4px;  /* Space above the bold text */
+    margin-bottom: 4px;  /* Space below the bold text */
+}
+
+/* Adjusting section layout */
+.section {
+    display: flex;  /* Use flexbox for layout */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;  /* Center items vertically */
+    align-items: center;  /* Center items horizontally */
+    border: 1px solid rgba(128, 128, 128, 0.265);  /* Grey border for each section */
+    padding: 10px;  /* Padding inside each section */
+    flex: 1;  /* Allow sections to stretch equally */
+    margin: 4px;  /* Space between sections */
+    text-align: center;  /* Center align text */
+}
+.section-image {
+    display: block;  /* Makes the image a block element */
+    margin: 10px 10px;  /* Center the image and add spacing below */
+    width: 30px;  /* Set the desired width */
+    height: 30px;  /* Maintain aspect ratio */
+    position: relative;  /* Allows for further positioning if needed */
+    top: 50px;  /* Move it upwards as needed */
+}
+.white-rectangle {
+    background-color: white;  /* White background */
+    width: 100%;  /* Full width of the viewport */
+    height: 0px;  /* Height of the rectangle */
+    position: fixed;  /* Fixed position at the bottom */
+    bottom: 0;  /* Align to the bottom of the viewport */
+    left: 0;  /* Align to the left */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);  /* Optional shadow for depth */
+}
+
+
