@@ -1,11 +1,9 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Full-page background image */
 .bg {
     background-image: url('https://wallpapers.com/images/hd/beautiful-sky-background-g3s17ha3ry0kjhzj.jpg');
     background-size: cover;
@@ -13,240 +11,217 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    display: flex;  /* Flexbox to center the content */
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Navbar container with background opacity */
 .navbar {
-    display: flex;  /* Flexbox to align logo and list horizontally */
-    align-items: center;  /* Vertically align items in the center */
-    justify-content: space-between;  /* Push logo to the left and list items to the right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
-    top: 0;  /* Position the navbar at the top with no gap */
+    top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.1);  /* 10% white background opacity */
-    padding: 10px 120px;  /* Padding inside the navbar */
-    z-index: 1;  /* Ensures navbar is on top of other elements */
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 120px;
+    z-index: 1;
 }
 
-/* Logo styling with padding */
 .navbar img {
-    width: 150px;  /* Medium size for the logo */
-    height: auto;  /* Maintain the aspect ratio */
-    padding-left: 20px;  /* Space between the logo and the left side */
+    width: 150px;
+    height: auto;
+    padding-left: 20px;
 }
 
-/* Container for the boxes */
 .container {
-    display: flex;  /* Flexbox for centering */
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;  /* Full width */
+    width: 100%;
 }
 
-/* Black box styling */
 .black-box {
-    background-color: rgb(255, 255, 255);  /* Black with 70% opacity */
-    border-radius: 10px;  /* Rounded corners */
-    padding: 30px;  /* Padding inside the black box */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow for depth */
-    width: 100%;  /* Width of the black box */
-    max-width: 1200px;  /* Maximum width for larger screens */
-    height: 350px;  /* Height of the black box */
-    position: absolute;  /* Position it relative to the container */
-    z-index: 0;  /* Ensure it's behind the white box */
-    top: 20px;  /* Adjust vertical positioning */
-    margin-top: 70px; /* Move down */
-    /* Or */
-    margin-bottom: 50px; /* Move up */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    margin-top: 70px;
 }
 
-/* White box styling */
 .white-box {
-    background-color: white;  /* White background */
-    border-radius: 10px;  /* Rounded corners */
-    padding: 10px;  /* Padding inside the box */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
-    width: 100%;  /* Width of the white box */
-    max-width: 1100px;  /* Maximum width for larger screens */
-    z-index: 1;  /* Ensures it's above the black box */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    z-index: 1;
     position: relative;
-    margin-top: 50px; /* Move down */
-    /* Or */
-    margin-bottom: 500px; /* Move up */
+    margin-top: 50px;
+    margin-bottom: 500px;
 }
 
-
-/* Icon list styling */
 .icon-list {
-    list-style: none;  /* Removes default bullet points */
-    display: flex;  /* Align items in a row */
-    justify-content: space-between;  /* Evenly distribute space between items */
-    margin: 0;  /* Remove default margin */
-    padding: 1;  /* Remove default padding */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1;
 }
 
-/* List item styling */
 .icon-list li {
-    display: flex;  /* Flexbox for icon and text */
-    flex-direction: column;  /* Arrange items vertically */
-    align-items: center;  /* Center items horizontally */
-    flex: 1;  /* Allow items to stretch equally */
-    text-align: center;  /* Center text below the icon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
 }
 
 .icon-list img {
-    width: 45px;  /* Icon size */
-    height: 45px;  /* Icon height */
+    width: 45px;
+    height: 45px;
 }
 
 .icon-list span {
-    font-size: 14px;  /* Font size for text */
-    font-weight: 500;  /* Medium font weight */
-    color: #333;  /* Dark text color */
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
 }
 
-/* List styling for navbar */
 .nav-list {
-    list-style: none;  /* Removes default bullet points from the list */
-    display: flex;  /* Align list items horizontally */
-    gap: 30px;  /* Space between each list item */
+    list-style: none;
+    display: flex;
+    gap: 30px;
     margin: 0;
-    padding-right: 20px;  /* Padding between the right side and the list items */
+    padding-right: 20px;
 }
 
 .nav-list li {
-    display: flex;  /* Align icon and text next to each other */
-    align-items: center;  /* Vertically center the icon and text */
-    gap: 10px;  /* Space between the icon and text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav-list img {
-    width: 24px;  /* Icon size */
-    height: 24px;  /* Icon height */
+    width: 24px;
+    height: 24px;
 }
 
 .nav-list span {
-    font-size: 16px;  /* Medium font size */
-    font-weight: 700;  /* Medium font weight */
-    color: #fff;  /* White text color to contrast against navbar background */
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
 }
 
-/* Blue background behind "Login" list item */
 .login-item {
-    background-color: rgba(0, 145, 255, 0.812);  /* Blue background specifically for "Login" */
-    padding: 10px 20px;  /* Padding to give space around the "Login" item */
-    border-radius: 5px;  /* Rounded corners for the background */
+    background-color: rgba(0, 145, 255, 0.812);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Make text in the "Login" list item white for contrast */
 .login-item span {
-    color: white;  /* White text color to contrast against the blue background */
+    color: white;
 }
-/* Blue box styling */
+
 .blue-box {
-    background-color: #007BFF;  /* Blue color */
-    width: 200px;  /* Width of the blue box */
-    height: 50px;  /* Height of the blue box */
-    border-radius: 40px;  /* Rounded corners */
-    position: absolute;  /* Position it on top of the black box */
-    top: -60px;  /* Move it up from the top of the black box */
-    left: 50%;  /* Center it horizontally */
-    transform: translateX(-50%);  /* Adjust horizontal centering */
-    z-index: 1;  /* Make sure it appears above the black box */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-    margin-top: 530px; /* Move down */
-    /* Or */
-    margin-bottom: 50px; /* Move up */
+    background-color: #007BFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 530px;
 }
-/* Text styling for the search box */
+
 .search-text {
-    color: white;  /* White text color */
-    font-size: 28px;  /* Font size */
-    font-weight: medium;  /* Bold text */
-    text-align: center;  /* Center text */
-    display: flex;  /* Flexbox for centering */
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    height: 100%;  /* Full height of the blue box */
+    color: white;
+    font-size: 28px;
+    font-weight: medium;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-/* Transparent box styling */
-/* Transparent box styling */
+
 .transparent-box {
-    background-color: rgba(255, 255, 255, 0.5);  /* White background with transparency */
-    border: 2px solid rgba(128, 128, 128, 0.268);  /* Grey border */
-    border-radius: 10px;  /* Rounded corners */
-    display: flex;  /* Flexbox for layout */
-    padding: 10px;  /* Padding inside the box */
-    position: absolute;  /* Position it above the black box */
-    top: 20px;  /* Adjust vertical positioning */
-    left: 50%;  /* Center horizontally */
-    transform: translateX(-50%);  /* Centering fix */
-    width: 80%;  /* Width of the transparent box */
-    margin-top: 170px; /* Move down */
-    /* Or */
-    margin-bottom: 50px; /* Move up */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.268);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin-top: 170px;
 }
 
-/* Section styling */
 .section {
-    border: 1px solid rgba(128, 128, 128, 0.265);  /* Grey border for each section */
-    padding: 50px;  /* Padding inside each section */
-    flex: 1;  /* Allow sections to stretch equally */
-    margin: 4px;  /* Space between sections */
+    border: 1px solid rgba(128, 128, 128, 0.265);
+    padding: 50px;
+    flex: 1;
+    margin: 4px;
 }
 
-/* Bigger sections */
 .big-section {
-    flex: 2;  /* Make the first two sections larger */
+    flex: 2;
 }
-/* Small text styling */
+
 .small-text {
-    font-size: 12px;  /* Smaller font size */
-    margin-top: 4px;  /* Space above the small text */
-    margin-bottom: 4px;  /* Space below the small text */
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-/* Bold text styling */
 .bold-text {
-    font-weight: bold;  /* Bold font */
-    font-size: 30px;  /* Slightly larger font size */
-    margin-top: 4px;  /* Space above the bold text */
-    margin-bottom: 4px;  /* Space below the bold text */
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-/* Adjusting section layout */
 .section {
-    display: flex;  /* Use flexbox for layout */
-    flex-direction: column;  /* Stack items vertically */
-    justify-content: center;  /* Center items vertically */
-    align-items: center;  /* Center items horizontally */
-    border: 1px solid rgba(128, 128, 128, 0.265);  /* Grey border for each section */
-    padding: 10px;  /* Padding inside each section */
-    flex: 1;  /* Allow sections to stretch equally */
-    margin: 4px;  /* Space between sections */
-    text-align: center;  /* Center align text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.265);
+    padding: 10px;
+    flex: 1;
+    margin: 4px;
+    text-align: center;
 }
+
 .section-image {
-    display: block;  /* Makes the image a block element */
-    margin: 10px 10px;  /* Center the image and add spacing below */
-    width: 30px;  /* Set the desired width */
-    height: 30px;  /* Maintain aspect ratio */
-    position: relative;  /* Allows for further positioning if needed */
-    top: 50px;  /* Move it upwards as needed */
+    display: block;
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50px;
 }
+
 .white-rectangle {
-    background-color: white;  /* White background */
-    width: 100%;  /* Full width of the viewport */
-    height: 0px;  /* Height of the rectangle */
-    position: fixed;  /* Fixed position at the bottom */
-    bottom: 0;  /* Align to the bottom of the viewport */
-    left: 0;  /* Align to the left */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);  /* Optional shadow for depth */
+    background-color: white;
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
